@@ -139,9 +139,9 @@ for item in all_images:
     im4 = Image.open(f'./4/{shorts_files[item["shorts"]]}.png').convert('RGBA')
 
     #Create each composite
-    com1 = Image.alpha_composite(im1, im2)
-    com2 = Image.alpha_composite(com1, im3)
-    com3 = Image.alpha_composite(com2, im4)
+    com1 = Image.alpha_composite(im1, im4)
+    com2 = Image.alpha_composite(com1, im2)
+    com3 = Image.alpha_composite(com2, im3)
 
                      
 
